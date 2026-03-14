@@ -4,10 +4,10 @@
   --font-inter: var(--font-inter);
   --font-sora: var(--font-sora);
 
-  --color-primary: #C5B49D;
-  --color-secondary: #E5E0D8;
-  --color-accent: #BCA893;
-  --color-deep: #0A0A0A;
+  --color-primary: #A68B67; /* Deeper gold for light contrast */
+  --color-secondary: #D4C9B9;
+  --color-accent: #9D8461;
+  --color-deep: #121212;
   
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-display: var(--font-sora), ui-sans-serif, system-ui, sans-serif;
@@ -22,8 +22,8 @@
 }
 
 :root {
-  --background: #0A0A0A;
-  --foreground: #FFFFFF;
+  --background: #FBFAF9;
+  --foreground: #121212;
   font-size: 18px; /* Optimized for SMB leaders 40+ */
   scroll-behavior: smooth;
 }
@@ -37,11 +37,11 @@ body {
 
 @layer utilities {
   .glass {
-    @apply bg-white/[0.03] backdrop-blur-xl border border-white/[0.08] shadow-[0_4px_24px_-1px_rgba(0,0,0,0.2)];
+    @apply bg-black/[0.02] backdrop-blur-xl border border-black/[0.05] shadow-[0_4px_24px_-1px_rgba(0,0,0,0.05)];
   }
   
   .glass-card {
-    @apply bg-white/[0.02] backdrop-blur-2xl border border-white/[0.05] shadow-[0_20px_50px_-12px_rgba(0,0,0,0.5)];
+    @apply bg-black/[0.01] backdrop-blur-2xl border border-black/[0.03] shadow-[0_20px_50px_-12px_rgba(0,0,0,0.08)];
   }
 
   .text-gradient {
@@ -49,7 +49,7 @@ body {
   }
 
   .bg-gradient-premium {
-    @apply bg-gradient-to-tr from-[#050505] via-[#0A0A0A] to-[#0D0D0D];
+    @apply bg-gradient-to-tr from-[#FDFDFD] via-[#FBFAF9] to-[#F5F3F0];
   }
 }
 
@@ -60,8 +60,8 @@ body {
   justify-content: center !important;
   gap: 0.5rem !important;
   padding: 0.75rem 1.8rem !important;
-  background-color: #C5B49D !important; /* bg-primary */
-  color: #000000 !important; /* text-black */
+  background-color: #A68B67 !important; /* bg-primary refined */
+  color: #FFFFFF !important; /* text-white for better contrast on gold */
   border-radius: 0.7rem !important; /* rounded-xl-ish */
   font-weight: 800 !important; /* font-extrabold */
   text-transform: uppercase !important;
@@ -86,10 +86,10 @@ body {
   justify-content: center !important;
   gap: 0.5rem !important;
   padding: 0.75rem 1.8rem !important;
-  background-color: rgba(255, 255, 255, 0.05) !important;
-  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  background-color: rgba(0, 0, 0, 0.03) !important;
+  border: 1px solid rgba(0, 0, 0, 0.08) !important;
   border-radius: 0.7rem !important; /* rounded-xl-ish */
-  color: #FFFFFF !important;
+  color: #121212 !important;
   font-weight: 700 !important;
   transition: all 0.3s ease !important;
   backdrop-filter: blur(8px) !important;
