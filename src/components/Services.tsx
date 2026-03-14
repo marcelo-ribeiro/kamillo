@@ -52,7 +52,7 @@ const services = [
 
 export function Services() {
   return (
-    <section id="servicos" className="py-24 relative overflow-hidden bg-white/5">
+    <section id="servicos" className="py-24 relative overflow-hidden bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-20">
           <motion.h2 
@@ -68,7 +68,7 @@ export function Services() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-white/60 max-w-2xl mx-auto"
+            className="text-black/60 max-w-2xl mx-auto"
           >
             Unimos tecnologia, dados e criatividade para entregar o maior retorno sobre investimento para o seu negócio.
           </motion.p>
@@ -93,7 +93,7 @@ export function Services() {
               </div>
               
               <h3 className="text-2xl font-display font-bold mb-4 group-hover:text-primary transition-colors">{service.title}</h3>
-              <p className="text-white/70 leading-relaxed text-lg mb-6">
+              <p className="text-black/70 leading-relaxed text-lg mb-6">
                 {service.description}
               </p>
               

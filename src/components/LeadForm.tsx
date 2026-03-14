@@ -23,7 +23,7 @@ export function LeadForm() {
           <CheckCircle2 size={40} />
         </div>
         <h3 className="text-3xl font-display font-bold mb-4">Solicitação Recebida!</h3>
-        <p className="text-white/60 mb-8">
+        <p className="text-black/60 mb-8">
           <strong>Kamillo Santos</strong> ou um de nossos especialistas da <strong>KJS Consultoria</strong> entrará em contato em até 24h para agendar seu diagnóstico.
         </p>
         <button 
@@ -37,7 +37,7 @@ export function LeadForm() {
   }
 
   return (
-    <section id="contato" className="py-24 relative overflow-hidden bg-black">
+    <section id="contato" className="py-24 relative overflow-hidden bg-[#FDFDFD]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div>
@@ -45,7 +45,7 @@ export function LeadForm() {
               Pronto para escalar <br />
               <span className="text-gradient">suas vendas?</span>
             </h2>
-            <p className="text-white/60 text-lg mb-10 leading-relaxed">
+            <p className="text-black/60 text-lg mb-10 leading-relaxed">
               Solicite um diagnóstico gratuito do seu negócio. Vamos analisar suas campanhas atuais e identificar o potencial de escala oculta na sua operação.
             </p>
             
@@ -56,7 +56,7 @@ export function LeadForm() {
                 "Plano de Escala 90 Dias",
                 "Diagnóstico de CRO"
               ].map((item, i) => (
-                <div key={i} className="flex items-center gap-3 text-white/80 font-medium">
+                <div key={i} className="flex items-center gap-3 text-black/80 font-medium">
                   <CheckCircle2 size={20} className="text-primary" />
                   {item}
                 </div>
@@ -73,40 +73,40 @@ export function LeadForm() {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
-                  <label className="text-xs font-bold uppercase tracking-widest text-white/40 ml-1">Nome Completo</label>
+                  <label className="text-xs font-bold uppercase tracking-widest text-black/40 ml-1">Nome Completo</label>
                   <input 
                     type="text" 
                     required
                     placeholder="Seu nome"
-                    className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 outline-none focus:border-primary transition-colors text-white"
+                    className="w-full bg-black/[0.03] border border-black/5 rounded-xl px-4 py-3 outline-none focus:border-primary transition-colors text-black"
                   />
                 </div>
                 <div className="space-y-2">
-                  <label className="text-xs font-bold uppercase tracking-widest text-white/40 ml-1">E-mail Corporativo</label>
+                  <label className="text-xs font-bold uppercase tracking-widest text-black/40 ml-1">E-mail Corporativo</label>
                   <input 
                     type="email" 
                     required
                     placeholder="seu@email.com"
-                    className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 outline-none focus:border-primary transition-colors text-white"
+                    className="w-full bg-black/[0.03] border border-black/5 rounded-xl px-4 py-3 outline-none focus:border-primary transition-colors text-black"
                   />
                 </div>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
-                  <label className="text-xs font-bold uppercase tracking-widest text-white/40 ml-1">Empresa</label>
+                  <label className="text-xs font-bold uppercase tracking-widest text-black/40 ml-1">Empresa</label>
                   <input 
                     type="text" 
                     required
                     placeholder="Nome da sua empresa"
-                    className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 outline-none focus:border-primary transition-colors text-white"
+                    className="w-full bg-black/[0.03] border border-black/5 rounded-xl px-4 py-3 outline-none focus:border-primary transition-colors text-black"
                   />
                 </div>
                 <div className="space-y-2">
-                  <label className="text-xs font-bold uppercase tracking-widest text-white/40 ml-1">Faturamento Mensal</label>
+                  <label className="text-xs font-bold uppercase tracking-widest text-black/40 ml-1">Faturamento Mensal</label>
                   <select 
                     required
-                    className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 outline-none focus:border-primary transition-colors text-white/40"
+                    className="w-full bg-black/[0.03] border border-black/5 rounded-xl px-4 py-3 outline-none focus:border-primary transition-colors text-black/40"
                   >
                     <option value="">Selecione uma faixa</option>
                     <option value="1">Até R$ 10k</option>
@@ -118,11 +118,11 @@ export function LeadForm() {
               </div>
 
               <div className="space-y-2">
-                <label className="text-xs font-bold uppercase tracking-widest text-white/40 ml-1">Mensagem (Opcional)</label>
+                <label className="text-xs font-bold uppercase tracking-widest text-black/40 ml-1">Mensagem (Opcional)</label>
                 <textarea 
                   rows={4}
                   placeholder="Conte um pouco sobre seu desafio atual..."
-                  className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 outline-none focus:border-primary transition-colors text-white"
+                  className="w-full bg-black/[0.03] border border-black/5 rounded-xl px-4 py-3 outline-none focus:border-primary transition-colors text-black"
                 ></textarea>
               </div>
 

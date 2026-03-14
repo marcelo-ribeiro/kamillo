@@ -29,18 +29,18 @@ const cases = [
 
 export function Cases() {
   return (
-    <section className="py-24 relative overflow-hidden bg-black">
+    <section className="py-24 relative overflow-hidden bg-[#FDFDFD]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
           <div className="md:w-1/2">
             <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
               Cases de <span className="text-gradient">Sucesso</span>
             </h2>
-            <p className="text-white/60">
+            <p className="text-black/60">
               Transformamos investimentos em ativos lucrativos. Confira alguns resultados reais de nossos clientes.
             </p>
           </div>
-          <button className="px-8 py-3 bg-white/5 border border-white/10 hover:bg-white/10 rounded-xl font-bold transition-all">
+          <button className="px-8 py-3 bg-black/[0.03] border border-black/20 hover:bg-black/10 rounded-xl font-bold transition-all text-black/80">
             Ver Todos os Cases
           </button>
         </div>
@@ -55,27 +55,27 @@ export function Cases() {
               transition={{ delay: i * 0.1 }}
               className="glass-card p-8 rounded-3xl relative group"
             >
-              <div className="absolute top-6 right-8 text-primary/20">
+              <div className="absolute top-6 right-8 text-primary/30">
                 <Quote size={40} />
               </div>
               
               <div className="mb-6">
-                <p className="text-white/40 text-xs uppercase font-bold tracking-widest mb-2">{item.company}</p>
-                <h3 className="text-3xl font-display font-bold text-white leading-tight mb-2">{item.result}</h3>
+                <p className="text-black/40 text-xs uppercase font-bold tracking-widest mb-2">{item.company}</p>
+                <h3 className="text-3xl font-display font-bold text-black leading-tight mb-2">{item.result}</h3>
                 <p className="text-primary font-bold text-sm">em {item.period}</p>
               </div>
 
               <div className="space-y-4 mb-8">
                 <div>
-                  <p className="text-white/30 text-[10px] uppercase font-bold mb-1">Estratégia</p>
-                  <p className="text-sm font-medium text-white/80">{item.strategy}</p>
+                  <p className="text-black/30 text-[10px] uppercase font-bold mb-1">Estratégia</p>
+                  <p className="text-sm font-medium text-black/80">{item.strategy}</p>
                 </div>
-                <p className="text-white/50 text-sm leading-relaxed">
+                <p className="text-black/50 text-sm leading-relaxed">
                   {item.description}
                 </p>
               </div>
 
-              <div className="pt-6 border-t border-white/5">
+              <div className="pt-6 border-t border-black/5">
                 <button className="text-xs font-bold uppercase tracking-widest text-primary flex items-center gap-2 group/btn">
                   Ler Estudo de Caso <span className="transform group-hover/btn:translate-x-1 transition-transform">→</span>
                 </button>

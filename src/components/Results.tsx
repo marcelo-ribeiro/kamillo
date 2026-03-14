@@ -27,13 +27,13 @@ const data = [
 
 export function Results() {
   return (
-    <section id="resultados" className="py-24 relative overflow-hidden bg-white/5">
+    <section id="resultados" className="py-24 relative overflow-hidden bg-[#FDFDFD]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
             Performance & <span className="text-gradient">Dados</span>
           </h2>
-          <p className="text-white/70 max-w-2xl mx-auto text-xl leading-relaxed">
+          <p className="text-black/70 max-w-2xl mx-auto text-xl leading-relaxed">
             Não acreditamos em palpites. Acreditamos em dados reais, crescimento constante e escala previsível.
           </p>
         </div>
@@ -49,7 +49,7 @@ export function Results() {
             <div className="flex justify-between items-start mb-8">
               <div>
                 <h3 className="text-2xl font-display font-bold">Crescimento de Vendas</h3>
-                <p className="text-white/50 text-base mt-1">Escala em 9 meses de consultoria</p>
+                <p className="text-black/50 text-base mt-1">Escala em 9 meses de consultoria</p>
               </div>
               <div className="px-3 py-1 bg-primary/10 text-primary text-xs font-bold rounded-full">
                 +312% ROI
@@ -93,7 +93,7 @@ export function Results() {
             <div className="flex justify-between items-start mb-8">
               <div>
                 <h3 className="text-2xl font-display font-bold">Volume de Leads</h3>
-                <p className="text-white/50 text-base mt-1">Geração de leads qualificados</p>
+                <p className="text-black/50 text-base mt-1">Geração de leads qualificados</p>
               </div>
               <div className="px-3 py-1 bg-secondary/10 text-secondary text-xs font-bold rounded-full">
                 -45% CAC
@@ -129,7 +129,7 @@ export function Results() {
             { label: "LTV Growth", value: "85%" },
           ].map((item, i) => (
             <div key={i} className="glass p-8 rounded-2xl text-center">
-              <p className="text-white/50 text-sm uppercase font-bold tracking-widest mb-2">{item.label}</p>
+              <p className="text-black/50 text-sm uppercase font-bold tracking-widest mb-2">{item.label}</p>
               <p className="text-4xl font-display font-bold text-primary">{item.value}</p>
             </div>
           ))}

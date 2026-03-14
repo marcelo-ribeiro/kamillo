@@ -30,7 +30,7 @@ export function Navbar() {
     <nav
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-6 py-4",
-        isScrolled ? "bg-black/60 backdrop-blur-md border-b border-white/10 py-3" : "bg-transparent"
+        isScrolled ? "bg-white/70 backdrop-blur-md border-b border-black/5 py-3" : "bg-transparent"
       )}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
@@ -42,9 +42,9 @@ export function Navbar() {
               className="h-8 md:h-10 w-auto object-contain transition-transform group-hover:scale-[1.02]"
             />
           </div>
-          <div className="hidden sm:flex flex-col border-l border-white/10 pl-4 py-1">
+          <div className="hidden sm:flex flex-col border-l border-black/10 pl-4 py-1">
             <span className="text-[11px] text-primary font-bold tracking-[0.3em] uppercase">Estratégia e Crescimento</span>
-            <span className="text-[9px] text-white/40 font-medium tracking-widest uppercase mt-0.5">Kamillo Santos</span>
+            <span className="text-[9px] text-black/40 font-medium tracking-widest uppercase mt-0.5">Kamillo Santos</span>
           </div>
         </Link>
 
@@ -54,7 +54,7 @@ export function Navbar() {
             <Link
               key={item.name}
               href={item.href}
-              className="text-sm font-medium text-white/70 hover:text-white transition-colors"
+              className="text-sm font-medium text-black/60 hover:text-black transition-colors"
             >
               {item.name}
             </Link>
@@ -69,7 +69,7 @@ export function Navbar() {
 
         {/* Mobile Toggle */}
         <button
-          className="lg:hidden text-white outline-none"
+          className="lg:hidden text-black outline-none"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
@@ -81,14 +81,14 @@ export function Navbar() {
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="absolute top-full left-0 right-0 bg-black/95 backdrop-blur-xl border-b border-white/10 p-6 lg:hidden"
+          className="absolute top-full left-0 right-0 bg-white/95 backdrop-blur-xl border-b border-black/5 p-6 lg:hidden"
         >
           <div className="flex flex-col gap-6">
             {navItems.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-lg font-medium text-white/80"
+                className="text-lg font-medium text-black/80"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {item.name}

@@ -26,7 +26,7 @@ const testimonials = [
 
 export function Testimonials() {
   return (
-    <section className="py-24 relative overflow-hidden bg-white/5">
+    <section className="py-24 relative overflow-hidden bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <motion.div
@@ -52,7 +52,7 @@ export function Testimonials() {
               transition={{ delay: i * 0.1 }}
               className="glass p-8 rounded-3xl relative group"
             >
-              <Quote className="absolute top-6 right-8 text-white/5 group-hover:text-primary/20 transition-colors" size={40} />
+              <Quote className="absolute top-6 right-8 text-black/5 group-hover:text-primary/20 transition-colors" size={40} />
               
               <div className="flex gap-1 mb-6">
                 {[...Array(5)].map((_, i) => (
@@ -60,17 +60,17 @@ export function Testimonials() {
                 ))}
               </div>
 
-              <p className="text-white/70 italic mb-10 leading-relaxed">
+              <p className="text-black/70 italic mb-10 leading-relaxed">
                 "{t.content}"
               </p>
 
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-white/10 group-hover:border-primary/50 transition-colors">
+                <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-black/5 group-hover:border-primary/50 transition-colors">
                   <img src={t.avatar} alt={t.name} className="w-full h-full object-cover" />
                 </div>
                 <div>
-                  <h4 className="font-display font-bold text-white text-sm">{t.name}</h4>
-                  <p className="text-white/40 text-[10px] uppercase font-bold tracking-widest">{t.role}</p>
+                  <h4 className="font-display font-bold text-black text-sm">{t.name}</h4>
+                  <p className="text-black/40 text-[10px] uppercase font-bold tracking-widest">{t.role}</p>
                 </div>
               </div>
             </motion.div>
