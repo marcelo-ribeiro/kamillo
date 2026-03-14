@@ -128,9 +128,10 @@ export function LeadForm() {
 
               <button 
                 type="submit"
-                className="btn-primary w-full text-xl"
+                className="btn-primary w-full text-sm sm:text-lg lg:text-xl px-4 py-4 lg:py-5 flex flex-col sm:flex-row gap-2"
               >
-                Solicitar Análise Estratégica <Send size={24} />
+                <span className="whitespace-normal leading-tight">Solicitar Análise Estratégica</span>
+                <Send size={18} className="flex-shrink-0" />
               </button>
             </form>
           </motion.div>
