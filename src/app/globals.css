@@ -25,6 +25,7 @@
   --background: #0A0A0A;
   --foreground: #FFFFFF;
   font-size: 18px; /* Optimized for SMB leaders 40+ */
+  scroll-behavior: smooth;
 }
 
 body {
